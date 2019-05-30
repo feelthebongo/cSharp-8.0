@@ -57,7 +57,7 @@ namespace SwitchExpressions
                 (State.Running, Transition.Suspend, Ignition.On) => State.Suspended,
                 (State.Suspended, Transition.Resume, Ignition.On) => State.Running,
                 (State.Suspended, Transition.Terminate, Ignition.Off) => State.NotRunning,
-                (State.NotRunning, Transition.Activate, Ignition.On) => ,
+                (State.NotRunning, Transition.Activate, Ignition.On) => State.Running,
                 _ => throw new InvalidOperationException()
             };
 
