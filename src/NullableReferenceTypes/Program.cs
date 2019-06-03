@@ -15,6 +15,8 @@ namespace NullableReferenceTypes
             {
                 Console.WriteLine($"{name} has been added to CVDB");
             }
+
+            Console.ReadKey();
         }
 
         static IEnumerable<string> GetNames(IEnumerable<Candidate> candidates)
@@ -23,8 +25,6 @@ namespace NullableReferenceTypes
             {
                 yield return $"{candidate.FirstName} {candidate.MiddleName} {candidate.LastName} {candidate.Applications.Count}";
             }
-
-            Console.ReadKey();
         }
     }
 }

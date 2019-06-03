@@ -28,12 +28,12 @@ namespace DefaultImplementations
 
     //class Dev : IFullStackDev { }
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        IFullStackDev dev = new Dev();
-    //        dev.LearnNewLanguage("TypeScript");
-    //    }
-    //}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //IFullStackDev dev = new Dev();
+            //dev.LearnNewLanguage("TypeScript");
+        }
+    }
 }
